@@ -17,8 +17,9 @@ const Tabs = () => {
       inactiveTintColor: '#9ea9b3',
       tabStyle: {
         marginVertical: moderateScale(10),
-      }}}
-      showLabel={false}
+      },
+      showLabel: false,
+      }}
     >
       <Tab.Screen name='Home' component={HomeScreen} options={{
         tabBarIcon: ({size, color}) => (
