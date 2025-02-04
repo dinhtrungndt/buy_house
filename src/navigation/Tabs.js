@@ -11,15 +11,15 @@ import {moderateScale} from 'react-native-size-matters';
 const Tabs = () => {
   const Tab = createBottomTabNavigator();
   return (
-    <Tab.Navigator 
-    tabBarOptions={{
-      activeTintColor: '#062743',
-      inactiveTintColor: '#9ea9b3',
-      tabStyle: {
+    <Tab.Navigator  
+    screenOptions={{
+      tabBarActiveTintColor: '#062743',
+      tabBarInactiveTintColor: '#9ea9b3',
+      tabBarStyle: {
         marginVertical: moderateScale(10),
       },
-      showLabel: false,
-      }}
+      tabBarShowLabel: false,
+    }}
     >
       <Tab.Screen name='Home' component={HomeScreen} options={{
         tabBarIcon: ({size, color}) => (
